@@ -17,9 +17,9 @@ public class MainClass {
 		System.out.println("Enter another number.");
 		num4 = tKeyboard.nextInt();
 		num2 = num4;		
-		Scanner tKeyboard2 = new Scanner(System.in);
+		
 		System.out.println("Would you like to add, subtract, multiply, or divide?");		
-		input = tKeyboard2.nextLine();
+		input = tKeyboard.next();
 		{
 			if("add".equalsIgnoreCase(input))
 			{
