@@ -1,0 +1,47 @@
+package mainPackage;
+
+import java.util.Scanner;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int num1, num2, num3, num4;
+		String input = "";
+
+		System.out.println("Enter a number.");
+		Scanner tKeyboard = new Scanner(System.in);
+		num4 = tKeyboard.nextInt();
+		num1 = num4;
+		System.out.println("Enter another number.");
+		num4 = tKeyboard.nextInt();
+		num2 = num4;		
+		Scanner tKeyboard2 = new Scanner(System.in);
+		System.out.println("Would you like to add, subtract, multiply, or divide?");		
+		input = tKeyboard2.nextLine();
+		{
+			if("add".equalsIgnoreCase(input))
+			{
+				num3=num1+num2;
+				System.out.printf("The answer is: %d",num3);
+			}
+			else if("subtract".equalsIgnoreCase(input))
+			{
+				num3=num1-num2;
+				System.out.printf("The answer is: %d",num3);
+			}
+			else if("multiply".equalsIgnoreCase(input))
+			{
+				num3=num1*num2;
+				System.out.printf("The answer is: %d",num3);
+			}
+			else if("divide".equalsIgnoreCase(input))
+			{
+				num3=num1/num2;
+				System.out.printf("The answer is: %d",num3);				
+			}
+
+		}
+	}
+}
